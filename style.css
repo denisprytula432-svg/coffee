@@ -19,7 +19,6 @@ header{
 .header_box{
     width: 75%;
     margin-top: 50px;
-    background: red;
 }
 nav{
     width: 100%;
@@ -46,8 +45,7 @@ nav{
 .header_info{
     width: 33%;
     height: 474px;
-    border: 2px solid;
-    margin-top: 320px;
+    margin-top: 300px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,11 +61,149 @@ nav{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
     font-style: Bold;
-    font-size: 72px;
+    font-size: 66px;
     color: white;
 }
 .p_header_info{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+.button_header_info{
+    border-radius: 100px;
+    width: 22%;
+    height: 55px;
+}
+.vydi{
+    background: #E2D9C8;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.konkretno_vydi{
+    width: 40%;
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bloki_vydi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p_bloki_vydi{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #544A3E;
+}
 
+
+.swiper {
+    width: 100%;
+    max-width: 1200px; /* Ширина контентной части как в макете */
+    margin: 0 auto;    /* Центрирует сам контейнер слайдера */
+    padding: 50px 0;   /* Отступы сверху и снизу */
+}
+.swiper-slide {
+    display: flex;
+    justify-content: center; /* Центрирует карточку внутри слайда */
+    align-items: center;
+}
+.special-coffee {
+    background-color: #f5f2ed; /* Светлый фон как на скрине */
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+
+.section-title {
+    font-family: serif; /* Или тот шрифт, что ты юзаешь */
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+/* Стили карточки */
+.coffee-card {
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    width: 280px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: left;
+    background: #f1ede2;
+}
+
+.card-image {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 280px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.card-content h3 {
+    margin: 15px 0 5px;
+    font-size: 20px;
+}
+
+.card-content p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.order-btn {
+    background: #2a1a12; /* Темный цвет кофе */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Позиционирование стрелок Swiper */
+.swiper-button-next, .swiper-button-prev {
+    color: #8b7e74 !important; /* Цвет стрелок */
+    background: #e8e2d9;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 18px !important;
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="box">
@@ -26,10 +27,147 @@
                     <h2 class="h2_header_info">Welcome</h2>
                     <h1 class="h1_header_info">We serve the richest coffee in the city!</h1>
                     <p class="p_header_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                    <button>Order Now</button>
+                    <button class="button_header_info">Order Now</button>
                 </div>
             </div>
         </header>
+        <section class="vydi">
+            <div class="konkretno_vydi">
+                <div class="bloki_vydi">
+                    <img class="img_bloki_vydi" src="img/hot.png" alt="">
+                    <p class="p_bloki_vydi">Hot Coffee</p>
+                </div>
+                <div class="bloki_vydi">
+                    <img class="img_bloki_vydi" src="img/xolod.png" alt="">
+                    <p class="p_bloki_vydi">Cold Coffee</p>
+                </div>
+                <div class="bloki_vydi">
+                    <img class="img_bloki_vydi" src="img/xz.png" alt="">
+                    <p class="p_bloki_vydi">Cup Coffee</p>
+                </div>
+                <div class="bloki_vydi">
+                    <img class="img_bloki_vydi" src="img/tort.png" alt="">
+                    <p class="p_bloki_vydi">Dessert</p>
+                </div>
+            </div>
+        </section>
+
+
+        
+<section class="special-coffee">
+    <h2 class="section-title">OUR SPECIAL COFFEE</h2>
+    
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Повтори этот блок swiper-slide 4-6 раз -->
+            <div class="swiper-slide">
+                <div class="coffee-card">
+                    <div class="card-image">
+                        <img src="img/Group 9.png" alt="Coffee">
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lungo coffee</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        <div class="card-footer">
+                            <span class="price">Rs. 200</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee-card">
+                    <div class="card-image">
+                        <img src="img/Group 9 (1).png" alt="Coffee">
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lungo coffee</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        <div class="card-footer">
+                            <span class="price">Rs. 200</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee-card">
+                    <div class="card-image">
+                        <img src="img/Group 9 (2).png" alt="Coffee">
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lungo coffee</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        <div class="card-footer">
+                            <span class="price">Rs. 200</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee-card">
+                    <div class="card-image">
+                        <img src="img/Group 9 (3).png" alt="Coffee">
+                        <div class="heart-icon">♡</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Lungo coffee</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        <div class="card-footer">
+                            <span class="price">Rs. 200</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="coffee-card">
+                    <div class="card-image">
+                        <img src="img/coffee.png" alt="Coffee">
+                    </div>
+                    <div class="card-content">
+                        <h3>Lungo coffee</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+                        <div class="card-footer">
+                            <span class="price">Rs. 200</span>
+                            <button class="order-btn">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Конец блока карточки -->
+        </div>
+
+        <!-- Стрелки, которые стоят по бокам -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
     </div>
+</section>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4, // Сколько карточек видно сразу (как на скрине)
+    spaceBetween: 30, // Расстояние между ними
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    // Настройки для мобилок
+    breakpoints: {
+      320: { slidesPerView: 1 },
+      768: { slidesPerView: 2 },
+      1024: { slidesPerView: 4 }
+    }
+  });
+</script>
 </body>
 </html>
