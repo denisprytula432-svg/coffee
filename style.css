@@ -130,7 +130,9 @@ nav{
     margin-bottom: 40px;
     text-transform: uppercase;
 }
-
+.section-title_ishe{
+    margin-top: 65px
+}
 /* Стили карточки */
 .coffee-card {
     background: #fff;
@@ -206,4 +208,208 @@ nav{
 
 .swiper-button-next::after, .swiper-button-prev::after {
     font-size: 18px !important;
+}
+.pod_tovarom{
+    background: #E2D9C8;
+    height: 335px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blok_pod_divom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 195px;
+    width: 18%;
+    align-items: center;
+}
+.h2_pod_divom{
+    color: #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.knopka_pod_divom{
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #30261C;
+    height: 27%;
+    width: 60%;
+    color: #F1F0EE;
+    font-weight: 500;
+    font-style: Medium;
+    font-style: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.customers-section {
+    background-color: #f5f2ed; /* Твой фирменный светлый фон */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #30261C;
+    margin-bottom: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.section-title-tit{
+    font-weight: 600;
+    font-style: medium;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 4%;
+    color: #30261C;
+}
+/* Стили для контейнера отзывов */
+.reviewsSwiper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0 60px 0 !important; /* Отступ снизу для точек */
+}
+
+/* Карточка отзыва */
+.review-card {
+    background-color: #eae3da; /* Бежевый фон карточки с макета */
+    border-radius: 20px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+    width: 100%;
+    max-width: 360px; /* Чтобы карточки не растягивались до убожества */
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.user-info h3 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    color: #1a1a1a;
+}
+
+.user-info p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/* Звёздочки рейтинга */
+.rating {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.star {
+    font-size: 18px;
+    color: #ccc; /* Цвет серых звезд */
+    margin-left: 2px;
+}
+
+.star.filled {
+    color: #f39c12; /* Золотой цвет для активных звезд */
+}
+
+.review-text {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Кастомизация точек Swiper внизу */
+.reviewsSwiper .swiper-pagination-bullet-active {
+    background: #2a1a12 !important; /* Цвет активной точки под цвет кофе */
+}
+.skidkaaa{
+    background: #E2D9C8;
+    height: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bonus{
+    height: 50%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.h2_bonuska{
+    color: #30261C;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0%;
+
+}
+.p_bonuska{
+    color: #30261C;
+    font-weight: 500;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: Medium;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.knopki_bonuska{
+    height: 27%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.email_bonuska{
+    border-radius: 100px;
+    width: 75%;
+    background: #F1F0EE;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #30261C;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.sub_bonuska{
+    background: #30261C;
+    border-radius: 100px;
+    width: 22%;
+    height: 100%;
+    color: #F1F0EE;
+    letter-spacing: 0%;
+    line-height: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
