@@ -272,6 +272,7 @@ nav{
     line-height: 100%;
     letter-spacing: 4%;
     color: #30261C;
+    font-family: 'Playfair Display';
 }
 /* Стили для контейнера отзывов */
 .reviewsSwiper {
@@ -387,19 +388,29 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-.email_bonuska{
+.email_bonuska {
     border-radius: 100px;
     width: 75%;
-    background: #F1F0EE;
     height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
+    border: none; /* Прибираємо дефолтну рамку інпуту */
+    outline: none; /* Щоб не було синьої рамки при кліку */
+    
+    /* 1. Задаємо колір фону і підключаємо іконку */
+    background: #F1F0EE url('img/mail.png');
+    
+    /* 2. Налаштовуємо іконку, щоб вона не розмножувалася і стояла зліва */
+    background-repeat: no-repeat;
+    background-position: 25px center; /* 25px від лівого краю, по центру вертикалі */
+    background-size: 22px; /* Розмір іконки */
+
+    /* 3. Збільшуємо padding зліва, щоб текст не налізав на іконку */
+    padding-left: 60px; 
+    
     color: #30261C;
     font-weight: 600;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
+    box-sizing: border-box; /* Щоб padding не розпирав інпут */
 }
 .sub_bonuska{
     background: #30261C;
@@ -412,4 +423,269 @@ nav{
     font-size: 14px;
     font-weight: 600;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+footer{
+    background: #30261C;
+    height: 358px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glavniy_footer{
+    width: 70%;
+    height: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo_footer{
+    width: 7%;
+    height: 22%;
+}
+.bloki_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 14%;
+}
+.h3_footer{
+    font-weight: 500;
+    font-style: medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    font-family: 'Playfair Display';
+}
+.p_footer{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+}
+.social_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 16%;
+    height: 50%;
+}
+.ikonki_footer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 40%;
+}
+.poloski{
+    display: none;
+}
+
+
+/* ==========================================================================
+   ОНОВЛЕНА АДАПТИВНА ВЕРСТКА ПІД МОБІЛЬНІ ПРИСТРОЇ (768px і менше)
+   З ЛІВИМ ВИРІВНЮВАННЯМ ТЕКСТУ, ЯК НА МАКЕТІ
+   ========================================================================== */
+@media (max-width: 768px) {
+    
+    /* 1. Налаштування хедера та фону */
+    header {
+        height: auto;
+        padding-bottom: 50px;
+        background-size: cover;
+    }
+
+    .header_box {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    /* 2. Навігація */
+    nav {
+        height: auto;
+        gap: 20px;
+    }
+
+    .box_item {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .box_item a {
+        font-size: 16px;
+    }
+
+    /* 3. Головний контент хедера - ЛІВЕ ВИРІВНЮВАННЯ */
+    .header_info {
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+        gap: 25px;
+        text-align: left; /* ВСТАНОВЛЮЄМО ЛІВЕ ВИРІВНЮВАННЯ ТЕКСТУ */
+        padding-right: 20px;
+    }
+
+    .h1_header_info {
+        font-size: 38px;
+        line-height: 1.2;
+        width: 70%;
+    }
+    .p_header_info{
+        width: 70%;
+    }
+
+    .button_header_info {
+        width: 160px;
+        height: 50px;
+        margin: 0; /* Прибираємо автоматичні відступи, щоб притиснути вліво */
+    }
+
+    /* 4. Блок категорій */
+    .vydi {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .konkretno_vydi {
+        width: 90%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .bloki_vydi {
+        width: 40%;
+    }
+
+    /* 5. Блок банер під товаром */
+    .pod_tovarom {
+        height: auto;
+        padding: 50px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .pod_tovarom img {
+        display: none;
+    }
+
+    .blok_pod_divom {
+        width: 100%;
+        height: auto;
+        gap: 25px;
+    }
+
+    .h2_pod_divom {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .knopka_pod_divom {
+        width: 260px;
+        height: 50px;
+        padding: 10px;
+    }
+
+    /* 6. Блок відгуків */
+    .customers-section {
+        padding: 50px 10px;
+    }
+
+    .section-subtitle {
+        font-size: 24px;
+    }
+
+    .section-title-tit {
+        font-size: 26px;
+    }
+
+    /* 7. Блок знижки (Bonus) - ТАКОЖ ЛІВЕ ВИРІВНЮВАННЯ */
+    .skidkaaa {
+        height: auto;
+        padding: 50px 20px;
+        justify-content: center;
+    }
+
+    .skidkaaa img {
+        display: none;
+    }
+
+    .bonus {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        text-align: left; /* ВСТАНОВЛЮЄМО ЛІВЕ ВИРІВНЮВАННЯ ТЕКСТУ */
+    }
+
+    .h2_bonuska {
+        font-size: 26px;
+    }
+
+    .knopki_bonuska {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+        align-items: flex-start; /* Притискаємо інпут і кнопку вліво */
+    }
+
+    .email_bonuska {
+        width: 100%;
+        height: 50px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .sub_bonuska {
+        width: 100%;
+        height: 50px;
+    }
+
+    /* 8. Футер */
+    footer {
+        height: auto;
+        padding: 50px 0;
+    }
+
+    .glavniy_footer {
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .logo_footer {
+        width: 60px;
+        height: auto;
+    }
+
+    .bloki_footer {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .social_footer {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .ikonki_footer {
+        width: 160px;
+        justify-content: space-between;
+    }
+    .search{
+        display: none;
+    }
+    .box_item{
+        display: none;
+    }
+    .poloski{
+        display: flex;
+    }
 }
