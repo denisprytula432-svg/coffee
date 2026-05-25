@@ -11,33 +11,49 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="box">
         <header>
-            <div class="header_box">
-                <nav>
-                    <img class="logo" src="img/Coffea.png" alt="">
-                    <div class="box_item">
-                        <a href="">home</a>
-                        <a href="">coffee</a>
-                        <a href="">bakery</a>
-                        <a href="">shop</a>
-                        <a href="">about</a>
-                        <a href="">login</a>
-                    </div>
-                    <img class="search" src="img/Group 7.png" alt="">
-                    <img class="poloski" src="img/Group.png" alt="">
-                </nav>
-                <div class="header_info">
-                    <h2 class="h2_header_info">Welcome</h2>
-                    <h1 class="h1_header_info">We serve the richest coffee in the city!</h1>
-                    <p class="p_header_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
-                    <button class="button_header_info">Order Now</button>
-                </div>
+    <div class="header_box">
+        <nav>
+            <img class="logo" src="img/Coffea.png" alt="">
+            <div class="box_item">
+                <a href="">home</a>
+                <a href="">coffee</a>
+                <a href="">bakery</a>
+                <a href="">shop</a>
+                <a href="">about</a>
+                <a href="">login</a>
             </div>
-        </header>
+            <img class="search" src="img/Group 7.png" alt="">
+            
+            <img class="poloski" id="burger-open" src="img/Group.png" alt="">
+        </nav>
+        
+        <div class="header_info">
+            <h2 class="h2_header_info">Welcome</h2>
+            <h1 class="h1_header_info">We serve the richest coffee in the city!</h1>
+            <p class="p_header_info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            <button class="button_header_info">Order Now</button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="burger-close" id="burger-close">&times;</div>
+            <div class="mobile-menu-links">
+                <a href="">home</a>
+                <a href="">coffee</a>
+                <a href="">bakery</a>
+                <a href="">shop</a>
+                <a href="">about</a>
+                <a href="">login</a>
+            </div>
+        </div>
+
+    </div>
+</header>
         <section class="vydi">
             <div class="konkretno_vydi">
                 <div class="bloki_vydi">
@@ -62,6 +78,25 @@
 
         
 <section class="special-coffee">
+    <section class="about-section">
+    <div class="about_box">
+        <div class="about_content">
+            <h2 class="about_title">About Our Coffee Shop</h2>
+            <p class="about_text">
+                Our coffee shop was created to be more than just a café — a cozy place where people can relax, meet friends, and enjoy great coffee together.
+            </p>
+            <p class="about_text">
+                The idea came from travels across Europe and inspiration from small cafés filled with the aroma of freshly brewed coffee and warm conversations. We wanted to bring that same atmosphere to our city.
+            </p>
+            <p class="about_text">
+                From the start, we focused on quality, carefully selecting premium coffee beans and learning the best brewing techniques from around the world. Today, our café is loved not only for its coffee, but also for its welcoming atmosphere, friendly baristas, and sense of community.
+            </p>
+            <button class="about_btn">Read More</button>
+        </div>
+        <div class="about_image">
+            <img src="img/about-coffee.png" alt="About Our Coffee Shop"> </div>
+    </div>
+</section>
     <h2 class="section-title">OUR SPECIAL COFFEE</h2>
     
     <div class="swiper mySwiper">

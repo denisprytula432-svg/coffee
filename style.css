@@ -106,6 +106,84 @@ nav{
 }
 
 
+/* ==========================================================================
+   БЛОК ABOUT OUR COFFEE SHOP (ДЕСКТОП)
+   ========================================================================== */
+.about-section {
+    width: 100%;
+    background-color: #f5f2ed; /* Под цвет твоего основного фона */
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about_box {
+    width: 75%; /* Такая же ширина контента, как у тебя в хедере */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.about_content {
+    width: 55%; /* Текст занимает чуть больше половины */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Все элементы прижаты влево */
+    text-align: left;
+}
+
+.about_title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #30261C;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.about_text {
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #544A3E;
+    margin-bottom: 15px;
+}
+
+/* Кнопка Read More */
+.about_btn {
+    background: #30261C;
+    color: #F1F0EE;
+    border: none;
+    border-radius: 100px;
+    padding: 12px 35px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.about_btn:hover {
+    background: #473a2b;
+}
+
+.about_image {
+    width: 40%; /* Картинка занимает оставшуюся часть */
+    display: flex;
+    justify-content: center;
+}
+
+.about_image img {
+    width: 100%;
+    max-width: 450px; /* Чтобы чашка не становилась гигантской */
+    height: auto;
+    object-fit: contain;
+}
+
+
 .swiper {
     width: 100%;
     max-width: 1200px; /* Ширина контентной части как в макете */
@@ -481,8 +559,14 @@ footer{
 .poloski{
     display: none;
 }
+.mobile-menu-links{
+    display: none;
+}
 
-
+/* ==========================================================================
+   ОНОВЛЕНА АДАПТИВНА ВЕРСТКА ПІД МОБІЛЬНІ ПРИСТРОЇ (768px і менше)
+   З ЛІВИМ ВИРІВНЮВАННЯМ ТЕКСТУ, ЯК НА МАКЕТІ
+   ========================================================================== */
 /* ==========================================================================
    ОНОВЛЕНА АДАПТИВНА ВЕРСТКА ПІД МОБІЛЬНІ ПРИСТРОЇ (768px і менше)
    З ЛІВИМ ВИРІВНЮВАННЯМ ТЕКСТУ, ЯК НА МАКЕТІ
@@ -508,10 +592,7 @@ footer{
     }
 
     .box_item {
-        width: 100%;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
+        display: none;
     }
 
     .box_item a {
@@ -524,7 +605,7 @@ footer{
         height: auto;
         margin-top: 60px;
         gap: 25px;
-        text-align: left; /* ВСТАНОВЛЮЄМО ЛІВЕ ВИРІВНЮВАННЯ ТЕКСТУ */
+        text-align: left; 
         padding-right: 20px;
     }
 
@@ -540,7 +621,7 @@ footer{
     .button_header_info {
         width: 160px;
         height: 50px;
-        margin: 0; /* Прибираємо автоматичні відступи, щоб притиснути вліво */
+        margin: 0; 
     }
 
     /* 4. Блок категорій */
@@ -616,9 +697,11 @@ footer{
 
     .bonus {
         width: 100%;
-        height: auto;
+        max-width: 400px;     
+        margin: 0 auto;       
         gap: 20px;
-        text-align: left; /* ВСТАНОВЛЮЄМО ЛІВЕ ВИРІВНЮВАННЯ ТЕКСТУ */
+        height: auto;
+        text-align: left;     
     }
 
     .h2_bonuska {
@@ -630,7 +713,7 @@ footer{
         flex-direction: column;
         gap: 15px;
         height: auto;
-        align-items: flex-start; /* Притискаємо інпут і кнопку вліво */
+        align-items: center;  
     }
 
     .email_bonuska {
@@ -679,13 +762,151 @@ footer{
         width: 160px;
         justify-content: space-between;
     }
-    .search{
+    
+    .search {
         display: none;
     }
-    .box_item{
-        display: none;
-    }
-    .poloski{
+    
+    .poloski {
         display: flex;
+    }
+
+    /* ==========================================================================
+       ИСПРАВЛЕНИЕ СЛАЙДЕРОВ НА МОБИЛКЕ (768px)
+       ========================================================================== */
+    
+    /* Центрируем оба слайдера (и кофе, и отзывы) */
+    .swiper, .reviewsSwiper {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto !important;
+    }
+
+    /* Жестко заставляем карточки встать по центру внутри слайдов */
+    .swiper-slide {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    /* Стили карточки кофе на мобилке */
+    .coffee-card {
+        background: #f1ede2;
+        border-radius: 15px;
+        padding: 15px;
+        width: 100%;        
+        max-width: 280px;  /* Чтобы карточка кофе не растягивалась шире макета */
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    /* Стили карточки отзыва на мобилке */
+    .review-card {
+        background-color: #eae3da;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+        width: 100%;
+        max-width: 360px; 
+        text-align: left;
+        margin: 0 auto;       
+    }
+    /* Вставляем внутрь @media (max-width: 768px) */
+
+.poloski {
+    cursor: pointer; /* Чтобы при наведении на иконку появлялся палец */
+}
+
+/* Стили мобильного меню */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 280px;             /* Ширина выезжающей шторки */
+    height: 100vh;            /* На всю высоту экрана телефона */
+    background-color: #30261C; /* Твой темный цвет */
+    z-index: 9999;            /* Чтобы меню было поверх слайдеров и картинок */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+    /* Изначально прячем меню за правый край экрана */
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+}
+
+/* Этот класс будет добавляться скриптом, чтобы меню выехало */
+.mobile-menu.active {
+    transform: translateX(0);
+}
+
+/* Кнопка-крестик */
+.burger-close {
+    color: #F1F0EE;
+    font-size: 40px;
+    align-self: flex-end;     /* Сдвигаем крестик вправо */
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* Ссылки внутри меню */
+.mobile-menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;         /* Текст ссылок по левому краю, как ты любишь */
+}
+
+.mobile-menu-links a {
+    color: #F1F0EE;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    font-weight: 500;
+}
+/* Вставлять внутрь @media (max-width: 768px) */
+
+    .about-section {
+        padding: 50px 0;
+    }
+
+    .about_box {
+        width: 90%; /* Расширяем контент на мобилке */
+        flex-direction: column-reverse; /* Картинка станет НАД текстом, так логичнее для мобилки */
+        gap: 35px;
+    }
+
+    .about_content {
+        width: 100%;
+        text-align: left; /* Текст остаётся слева, как на макете */
+        align-items: flex-start;
+    }
+
+    .about_title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .about_text {
+        font-size: 13px;
+    }
+
+    .about_btn {
+        width: 150px; /* Фиксированная ширина кнопки на мобилке */
+        height: 45px;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_image {
+        width: 100%;
+    }
+
+    .about_image img {
+        max-width: 320px; /* Ограничиваем размер чашки на экранах телефонов */
     }
 }
